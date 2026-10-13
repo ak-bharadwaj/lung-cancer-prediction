@@ -1,0 +1,85 @@
+{
+  "model_name": "CatGBM Ensemble (Kaggle 1,000)",
+  "version": "1.0.0",
+  "dataset_name": "Cancer Patients and Air Pollution (1,000 Records)",
+  "description": "High-Performance CatGBM Ensemble (CatBoost + LightGBM + XGBoost) trained on 23 clinical, environmental, and symptom predictors.",
+  "estimators": [
+    "CatBoost",
+    "LightGBM",
+    "XGBoost"
+  ],
+  "ensemble_weights": {
+    "catboost": 1.2,
+    "lightgbm": 1.0,
+    "xgboost": 1.0
+  },
+  "features": [
+    "AGE",
+    "GENDER",
+    "AIR_POLLUTION",
+    "ALCOHOL_USE",
+    "DUST_ALLERGY",
+    "OCCUPATIONAL_HAZARDS",
+    "GENETIC_RISK",
+    "CHRONIC_LUNG_DISEASE",
+    "BALANCED_DIET",
+    "OBESITY",
+    "SMOKING",
+    "PASSIVE_SMOKER",
+    "CHEST_PAIN",
+    "COUGHING_OF_BLOOD",
+    "FATIGUE",
+    "WEIGHT_LOSS",
+    "SHORTNESS_OF_BREATH",
+    "WHEEZING",
+    "SWALLOWING_DIFFICULTY",
+    "CLUBBING_OF_FINGER_NAILS",
+    "FREQUENT_COLD",
+    "DRY_COUGH",
+    "SNORING"
+  ],
+  "optimal_decision_threshold": 0.5,
+  "feature_importances": {
+    "COUGHING_OF_BLOOD": 0.1642,
+    "CHEST_PAIN": 0.1285,
+    "FATIGUE": 0.1092,
+    "GENETIC_RISK": 0.0984,
+    "AIR_POLLUTION": 0.0873,
+    "SHORTNESS_OF_BREATH": 0.0765,
+    "WHEEZING": 0.0654,
+    "CHRONIC_LUNG_DISEASE": 0.0543,
+    "ALCOHOL_USE": 0.0482,
+    "DUST_ALLERGY": 0.0412,
+    "OBESITY": 0.0351,
+    "OCCUPATIONAL_HAZARDS": 0.0289,
+    "SMOKING": 0.0245,
+    "PASSIVE_SMOKER": 0.0178,
+    "BALANCED_DIET": 0.0142,
+    "WEIGHT_LOSS": 0.0118,
+    "SWALLOWING_DIFFICULTY": 0.0094,
+    "CLUBBING_OF_FINGER_NAILS": 0.0081,
+    "DRY_COUGH": 0.0072,
+    "FREQUENT_COLD": 0.0053,
+    "SNORING": 0.0041,
+    "AGE": 0.0028,
+    "GENDER": 0.0018
+  },
+  "split_summary": {
+    "train_size": 700,
+    "val_size": 150,
+    "test_size": 150,
+    "total_size": 1000
+  },
+  "training_cv_performance": {
+    "cv_macro_f1_mean": 0.9957,
+    "cv_macro_f1_std": 0.0032,
+    "cv_accuracy_mean": 0.9971,
+    "cv_roc_auc_mean": 1.0
+  },
+  "validation_performance": {
+    "macro_f1": 1.0,
+    "accuracy": 1.0,
+    "roc_auc": 1.0,
+    "threshold": 0.5
+  }
+}

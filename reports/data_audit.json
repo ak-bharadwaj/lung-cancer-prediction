@@ -1,0 +1,72 @@
+{
+  "dataset_name": "Lung Cancer Cohort (1309 Records)",
+  "raw_file": "C:\\Users\\dorni\\OneDrive\\Desktop\\intern\\lung-cancer-prediction\\data\\lung_cancer_cohort_1309.csv",
+  "total_rows": 1309,
+  "total_columns": 16,
+  "standardized_columns": [
+    "GENDER",
+    "AGE",
+    "SMOKING",
+    "YELLOW_FINGERS",
+    "ANXIETY",
+    "PEER_PRESSURE",
+    "CHRONIC_DISEASE",
+    "FATIGUE",
+    "ALLERGY",
+    "WHEEZING",
+    "ALCOHOL_CONSUMING",
+    "COUGHING",
+    "SHORTNESS_OF_BREATH",
+    "SWALLOWING_DIFFICULTY",
+    "CHEST_PAIN",
+    "LUNG_CANCER"
+  ],
+  "missing_columns": [],
+  "extra_columns": [],
+  "total_missing_values": 0,
+  "missing_values_by_column": {
+    "GENDER": 0,
+    "AGE": 0,
+    "SMOKING": 0,
+    "YELLOW_FINGERS": 0,
+    "ANXIETY": 0,
+    "PEER_PRESSURE": 0,
+    "CHRONIC_DISEASE": 0,
+    "FATIGUE": 0,
+    "ALLERGY": 0,
+    "WHEEZING": 0,
+    "ALCOHOL_CONSUMING": 0,
+    "COUGHING": 0,
+    "SHORTNESS_OF_BREATH": 0,
+    "SWALLOWING_DIFFICULTY": 0,
+    "CHEST_PAIN": 0,
+    "LUNG_CANCER": 0
+  },
+  "duplicate_rows_count": 34,
+  "duplicate_notes": "Duplicate entries in anonymous survey questionnaires are natural when categorical response combinations overlap across participants.",
+  "class_imbalance": {
+    "positive_label": "YES",
+    "positive_count": 1144,
+    "positive_percentage": 87.39,
+    "negative_label": "NO",
+    "negative_count": 165,
+    "negative_percentage": 12.61,
+    "imbalance_ratio": 6.93,
+    "severity": "Minority class NO comprises 12.61% of records (165/1309)"
+  },
+  "demographics": {
+    "gender_counts": {
+      "M": 679,
+      "F": 630
+    },
+    "age_statistics": {
+      "min": 21,
+      "max": 89,
+      "mean": 62.02,
+      "median": 62.0,
+      "std": 8.37
+    }
+  },
+  "schema_valid": true,
+  "validation_errors": []
+}

@@ -1,0 +1,72 @@
+{
+  "model_name": "CatGBM Ensemble",
+  "version": "1.0.0",
+  "dataset_name": "Lung Cancer Cohort (1309 Records)",
+  "description": "High-Performance Ensemble of CatBoost, LightGBM, and XGBoost with validation-tuned thresholding and cross-validation.",
+  "estimators": [
+    "CatBoost",
+    "LightGBM",
+    "XGBoost"
+  ],
+  "ensemble_weights": {
+    "catboost": 1.5,
+    "lightgbm": 1.0,
+    "xgboost": 1.0
+  },
+  "features": [
+    "GENDER",
+    "AGE",
+    "SMOKING",
+    "YELLOW_FINGERS",
+    "ANXIETY",
+    "PEER_PRESSURE",
+    "CHRONIC_DISEASE",
+    "FATIGUE",
+    "ALLERGY",
+    "WHEEZING",
+    "ALCOHOL_CONSUMING",
+    "COUGHING",
+    "SHORTNESS_OF_BREATH",
+    "SWALLOWING_DIFFICULTY",
+    "CHEST_PAIN"
+  ],
+  "optimal_decision_threshold": 0.455,
+  "feature_importances": {
+    "ALLERGY": 0.1737,
+    "ALCOHOL_CONSUMING": 0.1162,
+    "COUGHING": 0.0984,
+    "SWALLOWING_DIFFICULTY": 0.0904,
+    "WHEEZING": 0.0816,
+    "PEER_PRESSURE": 0.0764,
+    "YELLOW_FINGERS": 0.0685,
+    "FATIGUE": 0.0644,
+    "CHEST_PAIN": 0.0576,
+    "ANXIETY": 0.0556,
+    "AGE": 0.0487,
+    "CHRONIC_DISEASE": 0.036,
+    "SHORTNESS_OF_BREATH": 0.0236,
+    "SMOKING": 0.0051,
+    "GENDER": 0.0039
+  },
+  "split_summary": {
+    "train_size": 915,
+    "val_size": 197,
+    "test_size": 197,
+    "total_size": 1309
+  },
+  "training_cv_performance": {
+    "cv_macro_f1_mean": 0.8242,
+    "cv_macro_f1_std": 0.0182,
+    "cv_accuracy_mean": 0.9082,
+    "cv_minority_recall_mean": 0.8,
+    "cv_roc_auc_mean": 0.9485
+  },
+  "validation_performance": {
+    "macro_f1": 0.8124,
+    "accuracy": 0.9036,
+    "minority_recall": 0.76,
+    "roc_auc": 0.9382,
+    "threshold": 0.455
+  },
+  "artifact_path": "C:\\Users\\dorni\\OneDrive\\Desktop\\intern\\lung-cancer-prediction\\models\\pipeline.joblib"
+}

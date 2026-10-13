@@ -1,0 +1,60 @@
+name: CI Test Suite
+
+on:
+  push:
+    branches: [ main, master ]
+  pull_request:
+    branches: [ main, master ]
+
+jobs:
+  python-tests:
+    name: Run Python Tests and Model Audit
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Python
+        uses: actions/setup-python@v5
+        with:
+          python-version: '3.11'
+          cache: 'pip'
+
+      - name: Install Dependencies
+        run: |
+          python -m pip install --upgrade pip
+          pip install -r requirements.txt
+
+      - name: Run Data Validation & Audit
+        run: |
+          python ml/data_validation.py
+          python ml/eda.py
+
+      - name: Train and Evaluate CatGBM Ensemble
+        run: |
+          python ml/train.py
+          python ml/evaluate.py
+
+      - name: Execute Pytest Suite
+        run: |
+          pytest tests/ -v
+
+  frontend-build:
+    name: Verify Frontend Build
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v4
+
+      - name: Set up Node.js
+        uses: actions/setup-node@v4
+        with:
+          node-version: '24'
+          cache: 'npm'
+          cache-dependency-path: frontend/package-lock.json
+
+      - name: Install Frontend Dependencies
+        working-directory: frontend
+        run: npm ci
+
+      - name: Build React Frontend
+        working-directory: frontend
+        run: npm run build

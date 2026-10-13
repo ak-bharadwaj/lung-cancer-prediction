@@ -1,0 +1,83 @@
+[
+  {
+    "model_name": "Dummy Classifier",
+    "cv_macro_f1": 0.4107,
+    "cv_macro_f1_std": 0.0,
+    "cv_accuracy": 0.6971,
+    "cv_roc_auc": 0.5,
+    "val_macro_f1": 0.4107,
+    "val_accuracy": 0.6971,
+    "val_roc_auc": 0.5
+  },
+  {
+    "model_name": "Logistic Regression",
+    "cv_macro_f1": 0.9412,
+    "cv_macro_f1_std": 0.0124,
+    "cv_accuracy": 0.9486,
+    "cv_roc_auc": 0.9882,
+    "val_macro_f1": 0.9452,
+    "val_accuracy": 0.9533,
+    "val_roc_auc": 0.9891
+  },
+  {
+    "model_name": "Decision Tree",
+    "cv_macro_f1": 0.9321,
+    "cv_macro_f1_std": 0.0158,
+    "cv_accuracy": 0.9400,
+    "cv_roc_auc": 0.9450,
+    "val_macro_f1": 0.9358,
+    "val_accuracy": 0.9467,
+    "val_roc_auc": 0.9520
+  },
+  {
+    "model_name": "Random Forest",
+    "cv_macro_f1": 0.9814,
+    "cv_macro_f1_std": 0.0062,
+    "cv_accuracy": 0.9843,
+    "cv_roc_auc": 0.9984,
+    "val_macro_f1": 0.9865,
+    "val_accuracy": 0.9867,
+    "val_roc_auc": 0.9991
+  },
+  {
+    "model_name": "CatBoost",
+    "cv_macro_f1": 0.9928,
+    "cv_macro_f1_std": 0.0041,
+    "cv_accuracy": 0.9943,
+    "cv_roc_auc": 0.9998,
+    "val_macro_f1": 0.9932,
+    "val_accuracy": 0.9933,
+    "val_roc_auc": 1.0
+  },
+  {
+    "model_name": "LightGBM",
+    "cv_macro_f1": 0.9912,
+    "cv_macro_f1_std": 0.0053,
+    "cv_accuracy": 0.9929,
+    "cv_roc_auc": 0.9996,
+    "val_macro_f1": 0.9932,
+    "val_accuracy": 0.9933,
+    "val_roc_auc": 1.0
+  },
+  {
+    "model_name": "XGBoost",
+    "cv_macro_f1": 0.9912,
+    "cv_macro_f1_std": 0.0049,
+    "cv_accuracy": 0.9929,
+    "cv_roc_auc": 0.9997,
+    "val_macro_f1": 0.9932,
+    "val_accuracy": 0.9933,
+    "val_roc_auc": 1.0
+  },
+  {
+    "model_name": "CatGBM Ensemble (Voting)",
+    "cv_macro_f1": 0.9957,
+    "cv_macro_f1_std": 0.0032,
+    "cv_accuracy": 0.9971,
+    "cv_roc_auc": 1.0,
+    "val_macro_f1": 1.0,
+    "val_accuracy": 1.0,
+    "val_roc_auc": 1.0,
+    "optimal_threshold": 0.5
+  }
+]

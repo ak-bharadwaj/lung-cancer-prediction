@@ -1,0 +1,32 @@
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.Python
+env/
+venv/
+.venv/
+.env
+
+# Pytest & Coverage
+.pytest_cache/
+.coverage
+htmlcov/
+.hypothesis/
+
+# Node & Frontend
+node_modules/
+frontend/node_modules/
+dist/
+frontend/dist/
+.npm
+*.tsbuildinfo
+
+# CatBoost info
+catboost_info/
+
+# OS & Local Binaries
+.DS_Store
+Thumbs.db
+cloudflared.exe
+*.exe

@@ -1,0 +1,210 @@
+{
+  "dataset_name": "Survey Lung Cancer (309 Records)",
+  "total_records": 309,
+  "target_distribution": {
+    "positive": {
+      "count": 270,
+      "percentage": 87.38
+    },
+    "negative": {
+      "count": 39,
+      "percentage": 12.62
+    },
+    "imbalance_ratio": 6.92
+  },
+  "age_statistics": {
+    "overall": {
+      "count": 309,
+      "mean": 62.67,
+      "std": 8.21,
+      "min": 21.0,
+      "p25": 57.0,
+      "median": 62.0,
+      "p75": 69.0,
+      "max": 87.0
+    },
+    "cancer_yes": {
+      "count": 270,
+      "mean": 62.95,
+      "std": 7.97,
+      "min": 38.0,
+      "p25": 58.0,
+      "median": 62.5,
+      "p75": 69.0,
+      "max": 81.0
+    },
+    "cancer_no": {
+      "count": 39,
+      "mean": 60.74,
+      "std": 9.63,
+      "min": 21.0,
+      "p25": 57.0,
+      "median": 61.0,
+      "p75": 65.5,
+      "max": 87.0
+    }
+  },
+  "gender_breakdown": {
+    "M": {
+      "total": 162,
+      "cancer_yes": 145,
+      "cancer_no": 17,
+      "cancer_prevalence_pct": 89.51
+    },
+    "F": {
+      "total": 147,
+      "cancer_yes": 125,
+      "cancer_no": 22,
+      "cancer_prevalence_pct": 85.03
+    }
+  },
+  "symptom_analysis": {
+    "SMOKING": {
+      "prevalence_in_cancer_positive_pct": 57.41,
+      "prevalence_in_cancer_negative_pct": 48.72,
+      "relative_risk": 1.046,
+      "risk_elevation": "4.6% increase in likelihood"
+    },
+    "YELLOW_FINGERS": {
+      "prevalence_in_cancer_positive_pct": 60.37,
+      "prevalence_in_cancer_negative_pct": 33.33,
+      "relative_risk": 1.151,
+      "risk_elevation": "15.1% increase in likelihood"
+    },
+    "ANXIETY": {
+      "prevalence_in_cancer_positive_pct": 52.59,
+      "prevalence_in_cancer_negative_pct": 30.77,
+      "relative_risk": 1.117,
+      "risk_elevation": "11.7% increase in likelihood"
+    },
+    "PEER_PRESSURE": {
+      "prevalence_in_cancer_positive_pct": 53.7,
+      "prevalence_in_cancer_negative_pct": 25.64,
+      "relative_risk": 1.153,
+      "risk_elevation": "15.3% increase in likelihood"
+    },
+    "CHRONIC_DISEASE": {
+      "prevalence_in_cancer_positive_pct": 52.59,
+      "prevalence_in_cancer_negative_pct": 35.9,
+      "relative_risk": 1.088,
+      "risk_elevation": "8.8% increase in likelihood"
+    },
+    "FATIGUE": {
+      "prevalence_in_cancer_positive_pct": 70.0,
+      "prevalence_in_cancer_negative_pct": 48.72,
+      "relative_risk": 1.133,
+      "risk_elevation": "13.3% increase in likelihood"
+    },
+    "ALLERGY": {
+      "prevalence_in_cancer_positive_pct": 61.85,
+      "prevalence_in_cancer_negative_pct": 12.82,
+      "relative_risk": 1.291,
+      "risk_elevation": "29.1% increase in likelihood"
+    },
+    "WHEEZING": {
+      "prevalence_in_cancer_positive_pct": 60.37,
+      "prevalence_in_cancer_negative_pct": 23.08,
+      "relative_risk": 1.213,
+      "risk_elevation": "21.3% increase in likelihood"
+    },
+    "ALCOHOL_CONSUMING": {
+      "prevalence_in_cancer_positive_pct": 61.11,
+      "prevalence_in_cancer_negative_pct": 17.95,
+      "relative_risk": 1.252,
+      "risk_elevation": "25.2% increase in likelihood"
+    },
+    "COUGHING": {
+      "prevalence_in_cancer_positive_pct": 62.59,
+      "prevalence_in_cancer_negative_pct": 25.64,
+      "relative_risk": 1.215,
+      "risk_elevation": "21.5% increase in likelihood"
+    },
+    "SHORTNESS_OF_BREATH": {
+      "prevalence_in_cancer_positive_pct": 65.19,
+      "prevalence_in_cancer_negative_pct": 56.41,
+      "relative_risk": 1.05,
+      "risk_elevation": "5.0% increase in likelihood"
+    },
+    "SWALLOWING_DIFFICULTY": {
+      "prevalence_in_cancer_positive_pct": 51.85,
+      "prevalence_in_cancer_negative_pct": 12.82,
+      "relative_risk": 1.218,
+      "risk_elevation": "21.8% increase in likelihood"
+    },
+    "CHEST_PAIN": {
+      "prevalence_in_cancer_positive_pct": 59.26,
+      "prevalence_in_cancer_negative_pct": 30.77,
+      "relative_risk": 1.159,
+      "risk_elevation": "15.9% increase in likelihood"
+    }
+  },
+  "correlation_with_target": {
+    "ALLERGY": 0.3278,
+    "ALCOHOL_CONSUMING": 0.2885,
+    "SWALLOWING_DIFFICULTY": 0.2597,
+    "WHEEZING": 0.2493,
+    "COUGHING": 0.2486,
+    "CHEST_PAIN": 0.1905,
+    "PEER_PRESSURE": 0.1864,
+    "YELLOW_FINGERS": 0.1813,
+    "FATIGUE": 0.1507,
+    "ANXIETY": 0.1449,
+    "CHRONIC_DISEASE": 0.1109,
+    "AGE": 0.0895,
+    "GENDER_NUM": 0.0673,
+    "SHORTNESS_OF_BREATH": 0.0607,
+    "SMOKING": 0.0582
+  },
+  "top_correlated_feature_pairs": [
+    {
+      "feature_a": "YELLOW_FINGERS",
+      "feature_b": "ANXIETY",
+      "correlation": 0.5658
+    },
+    {
+      "feature_a": "ANXIETY",
+      "feature_b": "SWALLOWING_DIFFICULTY",
+      "correlation": 0.4894
+    },
+    {
+      "feature_a": "GENDER_NUM",
+      "feature_b": "ALCOHOL_CONSUMING",
+      "correlation": 0.4543
+    },
+    {
+      "feature_a": "FATIGUE",
+      "feature_b": "SHORTNESS_OF_BREATH",
+      "correlation": 0.4417
+    },
+    {
+      "feature_a": "WHEEZING",
+      "feature_b": "COUGHING",
+      "correlation": 0.3743
+    },
+    {
+      "feature_a": "PEER_PRESSURE",
+      "feature_b": "SWALLOWING_DIFFICULTY",
+      "correlation": 0.3666
+    },
+    {
+      "feature_a": "GENDER_NUM",
+      "feature_b": "CHEST_PAIN",
+      "correlation": 0.363
+    },
+    {
+      "feature_a": "YELLOW_FINGERS",
+      "feature_b": "SWALLOWING_DIFFICULTY",
+      "correlation": 0.3459
+    },
+    {
+      "feature_a": "ALLERGY",
+      "feature_b": "ALCOHOL_CONSUMING",
+      "correlation": 0.3443
+    },
+    {
+      "feature_a": "ALCOHOL_CONSUMING",
+      "feature_b": "CHEST_PAIN",
+      "correlation": 0.3312
+    }
+  ]
+}
